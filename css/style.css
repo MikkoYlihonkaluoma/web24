@@ -1,0 +1,52 @@
+header {
+    background-color: black;
+    font-size: 20px;
+    text-decoration: underline;
+    color: white;
+    padding: 1em;
+
+}
+
+nav {
+    background-color: rgb(242, 208, 242);
+    padding: 0.2em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0.5;
+}
+
+.top-menu li {
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.top-menu a {
+    text-decoration: none;
+    color: blue;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+h2 {
+
+}
+
+p {
+
+}
+
+img {
+
+}
+
+section {
+
+}
+
+footer {
+
+}
