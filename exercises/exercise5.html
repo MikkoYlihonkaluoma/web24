@@ -30,8 +30,7 @@ main {
 aside {
     display: flex;
     flex-direction: column;
-    padding: 0 8em 0 8em;
-    justify-content: center;
+    align-items: center;
 }
 h1 {
     color: white;
@@ -42,16 +41,17 @@ article {
     margin: 5px 0 5px 0;
 }
 .big {
-    flex-grow: 3;
+    flex-grow: 2;
 }
 .small {
     flex: 1;
 }
 .nav {
-    border: 3px solid black;
+    border: 2px solid black;
     padding: 10px 50px 10px 50px;
     margin-right: 2em;
     margin-left: 2em;
+    background-color: darkmagenta;
 }
 </style>
 </head>
@@ -60,14 +60,14 @@ article {
         <p><h1>Flexbox Examples</h1></p>
     </header>
     <nav>
-        <h2 class="nav">Item 1</h2>
-        <h2 class="nav">Item 2</h2>
-        <h2 class="nav">Item 3</h2>
-        <h2 class="nav">Item 4</h2>
-        <h2 class="nav">Item 5</h2>
+        <h1 class="nav">Item 1</h1>
+        <h1 class="nav">Item 2</h1>
+        <h1 class="nav">Item 3</h1>
+        <h1 class="nav">Item 4</h1>
+        <h1 class="nav">Item 5</h1>
     </nav>
     <section>
-        <aside>
+        <aside class="big">
             <h2>side bar</h2>
             <h2>side bar</h2>
             <h2>side bar</h2>
