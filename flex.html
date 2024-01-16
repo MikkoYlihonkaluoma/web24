@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+main, footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+article {
+    background-color: thistle;
+    margin: 5px;
+}
+.big {
+    flex-grow: 2;
+    background-color: thistle;
+}
+.small {
+    flex: 1;
+    background-color: blanchedalmond;
+}
+    </style>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <article class="small"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis quisquam atque fugit aspernatur officiis delectus, corrupti deserunt reiciendis. Voluptatibus perferendis ea ad obcaecati esse qui beatae molestiae atque quae commodi.</article>
+        <article class="big"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, facere illo minus quas, reprehenderit officiis quasi eveniet, quis natus officia illum iste modi vero. Ipsum id aperiam nobis cumque adipisci.</article>
+        <article class="small"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas veritatis officia soluta alias exercitationem nihil enim at laboriosam dolores placeat. Quas eos minima repudiandae vel optio mollitia facere laborum vitae.</article>
+    </main>
+    <footer>
+        <p class="small"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus obcaecati quo quisquam officia natus? Ipsum, animi dolorem quam eos nobis mollitia possimus earum maxime vero incidunt vel quod repudiandae quo!</p>
+        <p class="big"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit voluptate esse qui excepturi corporis explicabo officia, ex nisi rem quidem! Hic corporis recusandae sequi amet quo blanditiis fugiat debitis corrupti.</p>
+    </footer>
+</body>
+</html>
