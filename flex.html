@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexbox</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <style>
 main, footer {
     display: flex;
@@ -28,7 +29,7 @@ article {
     <header>
 
     </header>
-    <table>
+    <table class="table table-hover">
         <tr>
             <th>ID</th>
             <th>Nimi</th>
@@ -50,21 +51,35 @@ article {
     </table>
     <h2> Example of a form</h2>
     <form method="post" action="process.php">
-        Name: <input type="text" name="fName" required minlength="2" maxlength="13"><br>
-        Email ID: <input type="email" name="email" required><br>
-        DOB: <input type="date" name="dob" required><br>
-        Message: <input type="text" name="msg"><br>
+        <div class="form-group">
+            <label for="formGroupExampleInput">Name: </label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Write here" required minlength="2" maxlength="13">
+        </div>
+        <div class="form-group">
+            <label for="formGroupExampleInput">Email: </label>
+            <input type="email" class="form-control" id="formGroupExampleInput" placeholder="Write here" required>
+        </div>
+        <div class="form-group">
+            <label for="formGroupExampleInput">DOB: </label>
+            <input type="date" class="form-control" id="formGroupExampleInput" required>
+        </div>
+        <div class="form-group">
+            <label for="formGroupExampleInput">Message: </label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Write here">
+        </div>
         <button type="submit">Submit</button>
         <button type="reset">Reset</button>
     </form>
     <main>
         <article class="small"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis quisquam atque fugit aspernatur officiis delectus, corrupti deserunt reiciendis. Voluptatibus perferendis ea ad obcaecati esse qui beatae molestiae atque quae commodi.</article>
         <article class="big"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, facere illo minus quas, reprehenderit officiis quasi eveniet, quis natus officia illum iste modi vero. Ipsum id aperiam nobis cumque adipisci.</article>
+        <article> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, ut cumque nisi optio sint tempora ipsa quod reprehenderit nulla suscipit ea neque atque sed error, sit doloribus alias tenetur quam.</article>
         <article class="small"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas veritatis officia soluta alias exercitationem nihil enim at laboriosam dolores placeat. Quas eos minima repudiandae vel optio mollitia facere laborum vitae.</article>
     </main>
     <footer>
         <p class="small"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus obcaecati quo quisquam officia natus? Ipsum, animi dolorem quam eos nobis mollitia possimus earum maxime vero incidunt vel quod repudiandae quo!</p>
         <p class="big"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit voluptate esse qui excepturi corporis explicabo officia, ex nisi rem quidem! Hic corporis recusandae sequi amet quo blanditiis fugiat debitis corrupti.</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
